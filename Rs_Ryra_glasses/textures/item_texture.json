@@ -1,0 +1,36 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "Ryra_glasses": {
+      "textures": [
+        "textures/item/Ryra_glasses"
+      ]
+    },
+    "Ryra_glasses_1": {
+      "textures": [
+        "textures/item/Ryra_glasses"
+      ]
+    },
+    "Ryra_glasses_2": {
+      "textures": [
+        "textures/item/Ryra_glasses"
+      ]
+    },
+    "Ryra_glasses_3": {
+      "textures": [
+        "textures/item/Ryra_glasses"
+      ]
+    },
+    "Ryra_glasses_4": {
+      "textures": [
+        "textures/item/Ryra_glasses"
+      ]
+    },
+    "Ryra_glasses_5": {
+      "textures": [
+        "textures/item/Ryra_glasses"
+      ]
+    }
+  }
+}

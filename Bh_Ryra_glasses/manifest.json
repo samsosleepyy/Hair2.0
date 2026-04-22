@@ -1,0 +1,152 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Ryra_glasses_BP",
+    "description": "Addon by SamSoSleepy สิทธิ์ลูกค้า MoonShop",
+    "uuid": "928477fc-1702-4f37-9f25-f15063d9c39c",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ],
+    "icon": "pack_icon.png"
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "4f367e3c-ef66-43ce-854b-e0d8d4c30db2",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "uuid": "cf44ee74-8d88-4344-90c5-c3899dbdad56",
+      "version": [
+        0,
+        0,
+        1
+      ],
+      "entry": "scripts/Ryra_head.js",
+      "language": "javascript"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "17658d33-e171-4f79-a39d-83fe59fe2e3a",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.14.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0"
+    }
+  ],
+  "importInspectOverlay": {
+    "flex": 1,
+    "backgroundColor": "rgba(0,0,0,0.62)",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "padding": 18
+  },
+  "importInspectCard": {
+    "width": "100%",
+    "maxWidth": 420,
+    "backgroundColor": "rgba(14,14,18,0.96)",
+    "borderRadius": 18,
+    "padding": 14,
+    "borderWidth": 1,
+    "borderColor": "rgba(255,255,255,0.10)",
+    "shadowColor": "#000",
+    "shadowOpacity": 0.35,
+    "shadowRadius": 18,
+    "shadowOffset": {
+      "width": 0,
+      "height": 10
+    },
+    "elevation": 8
+  },
+  "importInspectHeader": {
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "marginBottom": 10
+  },
+  "importInspectTitle": {
+    "color": "#fff",
+    "fontSize": 16,
+    "fontWeight": "800",
+    "letterSpacing": 0.2
+  },
+  "importInspectCloseBtn": {
+    "width": 34,
+    "height": 34,
+    "borderRadius": 12,
+    "backgroundColor": "rgba(255,255,255,0.07)",
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
+  "importInspectCloseTxt": {
+    "color": "rgba(255,255,255,0.95)",
+    "fontSize": 16,
+    "fontWeight": "900"
+  },
+  "importInspectListWrap": {
+    "width": "100%",
+    "maxHeight": 360,
+    "borderRadius": 14,
+    "backgroundColor": "rgba(255,255,255,0.03)",
+    "borderWidth": 1,
+    "borderColor": "rgba(255,255,255,0.06)",
+    "padding": 10
+  },
+  "importInspectEmpty": {
+    "paddingVertical": 18,
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
+  "importInspectEmptyTxt": {
+    "color": "rgba(255,255,255,0.70)",
+    "fontSize": 12,
+    "fontWeight": "700"
+  },
+  "importInspectRow": {
+    "width": "100%",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "justifyContent": "space-between",
+    "paddingVertical": 10,
+    "paddingHorizontal": 10,
+    "borderRadius": 12,
+    "backgroundColor": "rgba(255,255,255,0.04)",
+    "borderWidth": 1,
+    "borderColor": "rgba(255,255,255,0.06)",
+    "marginBottom": 8
+  },
+  "importInspectName": {
+    "flex": 1,
+    "paddingRight": 10,
+    "color": "#fff",
+    "fontSize": 12,
+    "fontWeight": "800"
+  },
+  "importInspectHint": {
+    "color": "rgba(255,255,255,0.75)",
+    "fontSize": 14,
+    "fontWeight": "900"
+  }
+}

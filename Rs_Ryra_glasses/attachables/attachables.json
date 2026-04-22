@@ -1,0 +1,89 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "ryra_glasses:Ryra_glasses",
+      "item": {
+        "ryra_glasses:Ryra_glasses": "query.owner_identifier=='minecraft:player'"
+      },
+      "materials": {
+        "default": "armor"
+      },
+      "textures": {
+        "default": "textures/skin/Ryra_glasses"
+      },
+      "geometry": {
+        "default": "geometry.Ryra_glasses"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.OUSZOQLALKBAFJS=0;",
+          "variable.ALIBOALIBO=13;",
+          "variable.nine=6;",
+          "variable.OUSZOQLALKBAFJSALIBOALIBO=0;",
+          "variable.RGBYM=0;",
+          "variable.XDHOQRAKVG=0;",
+          "variable.XDHOQRAKVGWTCHK=0;",
+          "variable.OUSZO=0;",
+          "variable.KMFXWKMFXW=0;",
+          "variable.RAKVG=query.target_y_rotation;",
+          "variable.RAKVGRAKVG=query.target_x_rotation;",
+          "variable.RAKVGRAKVGRAKVG=8;",
+          "variable.XDHOQXDHOQXDHOQ=0;",
+          "variable.XDHOQXDHOQXDHOQXDHOQ=0;",
+          "variable.e2=0.75;",
+          "variable.VMOQYVMOQYVMOQY=0;",
+          "variable.VMOQY=1;"
+        ],
+        "pre_animation": [
+          "variable.RAKVG>query.target_y_rotation?{variable.RAKVG=variable.RAKVG-(math.abs(variable.RAKVG-query.target_y_rotation)/variable.RAKVGRAKVGRAKVG);};",
+          "variable.RAKVG<query.target_y_rotation?{variable.RAKVG=variable.RAKVG+(math.abs(variable.RAKVG-query.target_y_rotation)/variable.RAKVGRAKVGRAKVG);};",
+          "variable.RAKVGRAKVG>query.target_x_rotation?{variable.RAKVGRAKVG=math.clamp(variable.RAKVGRAKVG,-45,30)-(math.abs(math.clamp(variable.RAKVGRAKVG,-45,30)-query.target_x_rotation)/variable.RAKVGRAKVGRAKVG);};",
+          "variable.RAKVGRAKVG<query.target_x_rotation?{variable.RAKVGRAKVG=math.clamp(variable.RAKVGRAKVG,-45,30)+(math.abs(math.clamp(variable.RAKVGRAKVG,-45,30)-query.target_x_rotation)/variable.RAKVGRAKVGRAKVG);};",
+          "variable.RAKVGRAKVG=variable.RAKVGRAKVG-(math.abs(query.target_y_rotation)/(45/2)+(query.is_sneaking*2))+(query.is_sneaking*math.abs(query.target_y_rotation)/(45/2));",
+          "variable.RAKVGRAKVG=math.clamp(variable.RAKVGRAKVG,-45,30);",
+          "variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ=query.head_y_rotation(0)-variable.RGBYM;",
+          "variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ>90?{variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ=variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ-360;};",
+          "variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ<-90?{variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ=variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ+360;};",
+          "variable.XDHOQRAKVG=(variable.XDHOQRAKVG-(math.clamp(variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ,-2.5,2.5)*0.025)-(variable.OUSZOQLALKBAFJS*0.025))*0.85;",
+          "variable.XDHOQXDHOQXDHOQXDHOQ=(variable.XDHOQXDHOQXDHOQXDHOQ-(math.clamp(variable.KECCEQLALKOUOOMRAKVGQLALKQBFSQ,-10,10)*0.025)-(variable.XDHOQXDHOQXDHOQ*0.025))*0.9;",
+          "variable.OUSZOQLALKBAFJS=variable.OUSZOQLALKBAFJS+variable.XDHOQRAKVG;",
+          "variable.XDHOQXDHOQXDHOQ=variable.XDHOQXDHOQXDHOQ+variable.XDHOQXDHOQXDHOQXDHOQ+math.clamp(query.vertical_speed/20,-1,1);",
+          "variable.RGBYM=query.head_y_rotation(0);",
+          "variable.QLALK=math.clamp((-query.target_x_rotation/90),-variable.e2/3,0)*variable.VMOQY;",
+          "variable.OUSZO=math.abs(variable.OUSZO-query.is_sneaking)*2;",
+          "variable.YGKFGWZGAAALIBO=query.vertical_speed;",
+          "variable.XDHOQRAKVGWTCHK=(variable.XDHOQRAKVGWTCHK-(math.clamp(variable.YGKFGWZGAAALIBO*2,-2.5,2.5)*0.05)-(variable.KMFXWKMFXW*0.05))*0.95;",
+          "variable.KMFXWKMFXW=variable.KMFXWKMFXW+variable.XDHOQRAKVGWTCHK+query.is_moving+(variable.OUSZO*2);",
+          "variable.ALIBO=query.target_x_rotation;",
+          "variable.OUSZORAKVGBAFJSQBFSQRAKVG=math.clamp(math.lerp(0,-55,query.cape_flap_amount)-(variable.ALIBOALIBO*query.modified_move_speed),-70,0);",
+          "variable.VMOQYAXGZGBAFJSRGBYM=math.clamp(query.cape_flap_amount,0,0.5);",
+          "variable.VMOQYAXGZGBAFJSRGBYMWTCHK=query.modified_distance_moved*18;",
+          "variable.OUSZOQLALKBAFJSWTJVCWTJVC=math.clamp(variable.OUSZOQLALKBAFJS,-2.5,2.5);",
+          "variable.QBFSQOXMCERAKVG=-query.target_y_rotation/variable.nine;",
+          "variable.OUSZOOUOOM=(query.is_sneaking*-10);",
+          "variable.OUSZOOUOOMWTJVC=(query.is_sneaking*-15);",
+          "variable.OUSZO=query.is_sneaking;",
+          "variable.QLALKGTHSYQLALKQBFSQWZGAAFTPOQQYIXKRAKVG=math.clamp(-query.target_y_rotation*0.08/6,-0.5,0);",
+          "variable.QLALKGTHSYQLALKAXGZGQLALKVMOQYRAKVG=math.clamp(-query.target_y_rotation*0.08/6,0,0.5);",
+          "variable.QLALKQLALK=math.clamp((-query.target_x_rotation/120*variable.VMOQY),-0.25,0.25);",
+          "variable.QLALKKALQU=math.clamp(-variable.QLALK,0,variable.e2);",
+          "variable.QLALKBUXKQ=math.clamp(-variable.QLALK+variable.e2,0,1);",
+          "variable.QLALKZYZRS=math.clamp(variable.QLALK,-variable.e2,0);",
+          "variable.QLALKALQHS=math.clamp(variable.QLALK-0.125,-variable.e2,0);",
+          "variable.QLALKNAEMQ=math.clamp(variable.QLALK-variable.e2,-variable.e2,0);",
+          "variable.RGBYMOXMCEYGKFG=math.clamp((variable.XDHOQXDHOQXDHOQXDHOQ)*25,-25,25);"
+        ],
+        "animate": [
+          "ryra_glasses"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.armor"
+      ],
+      "animations": {
+        "ryra_glasses": "animation.Ryra_glasses"
+      }
+    }
+  }
+}
